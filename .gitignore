@@ -12,3 +12,10 @@ npm-debug.log*
 # OS / Editor
 .DS_Store
 Thumbs.db
+
+# Firebase
+.firebase/
+*firebase-debug.log*
+
+# Build output
+ppt/dist/

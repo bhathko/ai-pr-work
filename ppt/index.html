@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>我用 AI 繞的那條大彎路 · The Big Detour</title>
+<title>我用 AI 做的三件事 · Show &amp; Tell</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -594,7 +594,7 @@
   body.dark-bg #nav .dot{background:rgba(255,255,255,.32)}
   body.dark-bg #nav .dot.active{background:var(--accent)}
 
-  #hint{position:fixed;bottom:2.4vh;right:2.5vw;z-index:30;font-family:var(--mono);font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.4;color:var(--ink-tint, currentColor)}
+  #hint{position:fixed;bottom:1vh;right:2.5vw;z-index:30;font-family:var(--mono);font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.4;color:var(--ink-tint, currentColor)}
   body.dark-bg #hint{color:var(--paper);opacity:.4}
   body.low-power #hint{color:var(--accent);opacity:.72}
   body.dark-bg.low-power #hint{color:var(--paper);opacity:.72}
@@ -1251,29 +1251,44 @@
     </div>
     <div style="flex:1;padding:0;display:grid;grid-template-rows:1fr auto;gap:2vh">
       <div style="display:flex;flex-direction:column;justify-content:center;gap:2.8vh">
-        <div data-anim class="t-cat">THE BIG DETOUR · 那條大彎路</div>
-        <h1 data-anim style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(8.6vw,15vh);line-height:.98;letter-spacing:-.03em">我用 AI 繞的<br>那條<span class="underline-accent">大彎路</span></h1>
-        <div data-anim class="lead" style="max-width:46ch;font-weight:400">別等全想通才動手，先弄髒手吧。</div>
+        <div data-anim class="t-cat">SHOW &amp; TELL · 三個專案</div>
+        <h1 data-anim style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(8.6vw,15vh);line-height:.98;letter-spacing:-.03em">我用 AI 做的<br><span class="underline-accent">三件事</span></h1>
+        <div data-anim class="lead" style="max-width:46ch;font-weight:400">用了哪些工具、流程怎麼串、哪裡不如預期。</div>
       </div>
       <div data-anim style="display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--border-subtle);padding-top:2vh">
-        <div class="t-meta">一場我出糗、但有學到東西的分享</div>
+        <div class="t-meta">一場工具分享，順便聊聊我踩過的坑</div>
         <div class="t-meta">→ swipe / arrow keys</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 02 · 鉤子 (S09 · Dot Matrix Statement) ============ -->
-<section class="slide" data-layout="S09" data-animate="statement">
+<!-- ============ 02 · 目錄 (S13 · Three blocks) ============ -->
+<section class="slide" data-layout="S13" data-animate="stack-build">
   <div class="canvas-card">
-    <span class="dot-mat lg" aria-hidden="true" style="position:absolute;right:0;top:0;width:34vw;height:34vw"></span>
-    <div class="chrome-min"><div class="l">COLD OPEN · 開場</div><div class="r">02 / 11</div></div>
-    <div style="flex:1;padding:0;display:flex;flex-direction:column;justify-content:center;gap:4vh">
-      <h1 data-anim style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(5.6vw,10vh);line-height:1.12;letter-spacing:-.02em;max-width:22ch"><span class="underline-accent">最有用</span>的一次，<br>不是<span class="underline-accent">改變我最多</span>的那一次。</h1>
-      <div data-anim class="col" style="gap:1.2vh;max-width:52ch">
-        <div class="t-body">最有用的那次，幫我省了一堆時間。</div>
-        <div class="t-body">改變我最多的那次，是因為我掉進一個大坑。</div>
-        <div class="t-body" style="font-weight:600">失敗的故事，往往比成功的更讓人記得住——今天就聊後面那次。</div>
+    <div class="chrome-min"><div class="l">OVERVIEW · 今天的菜單</div><div class="r">02 / 10</div></div>
+    <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:2.4vh">
+      <div data-anim style="display:flex;flex-direction:column;gap:1.4vh">
+        <div class="t-cat">先上菜單</div>
+        <h2 class="h-xl-zh" style="font-size:min(4.6vw,8.4vh)">今天的三道菜</h2>
+      </div>
+      <div data-anim class="lead" style="max-width:60ch;font-weight:400">三個我實際用過的工具：一個 Agent 框架、一個發想 skill、一個簡報 skill。</div>
+      <div class="stack-row" data-anim style="margin-top:1vh">
+        <div class="stack-block b-grey">
+          <div class="layer-nb">01</div>
+          <div class="layer-ttl">LangGraph</div>
+          <div class="layer-desc">想試著當老闆的可以找它：聘一排 AI 員工，幫我把三天衝堂議程排好。</div>
+        </div>
+        <div class="stack-block b-grey">
+          <div class="layer-nb">02</div>
+          <div class="layer-ttl">Brainstorming skill</div>
+          <div class="layer-desc">拿它幫新專案發想點子，順便摸清它能做到哪、做不到哪。</div>
+        </div>
+        <div class="stack-block b-grey">
+          <div class="layer-nb">03</div>
+          <div class="layer-ttl">guizang-ppt-skill</div>
+          <div class="layer-desc">這份網頁版簡報，就是用它生出來的。</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1284,7 +1299,7 @@
   <div class="canvas-card">
     <div class="split-half">
       <div class="half">
-        <div class="chrome-min"><div class="l">ACT I · 我用對的那次</div><div class="r">03 / 11</div></div>
+        <div class="chrome-min"><div class="l">TOOL 01 · LANGGRAPH</div><div class="r">03 / 10</div></div>
         <div data-anim style="flex:1;display:flex;flex-direction:column;justify-content:center">
           <div class="t-cat" style="margin-bottom:2.4vh">THE PROBLEM · 痛點</div>
           <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(6vw,11vh);line-height:1.02;letter-spacing:-.03em">三天研討會，<br>只有<span class="underline-accent">一個我</span></h2>
@@ -1293,9 +1308,9 @@
       <div class="half b-grey">
         <div class="chrome-min"><div class="l">&nbsp;</div><div class="r">&nbsp;</div></div>
         <div data-anim style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:3vh">
-          <div class="t-body" style="font-size:max(19px,1.3vw)">幾十場議程，場場衝堂。我又不會分身，不可能每場都聽到。</div>
-          <div class="t-body" style="font-size:max(19px,1.3vw)">哪幾場該聽?怎麼排才能讓收穫最大化?</div>
-          <div class="t-body-emp" style="font-size:max(19px,1.3vw)">要一場一場的點進去看，老實說也挺頭痛的。<br>不過這種歸納問題，剛好是 AI 的強項。</div>
+          <div class="t-body" style="font-size:max(19px,1.3vw)">議程表一打開，幾十場議程看得眼花撩亂，想聽的偏偏還撞在同一個時段。</div>
+          <div class="t-body" style="font-size:max(19px,1.3vw)">光要弄懂每場在講什麼，就得一場一場點開，看講者、讀摘要，還沒出發就先累了。</div>
+          <div class="t-body-emp" style="font-size:max(19px,1.3vw)">這種事情，丟給一個團隊做剛剛好。<br>甚麼!!! 沒有團隊——那就自己找一個。</div>
         </div>
       </div>
     </div>
@@ -1305,52 +1320,82 @@
 <!-- ============ 04 · 小工具 (S11 · flow) ============ -->
 <section class="slide" data-layout="S11" data-animate="grid-reveal">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">ACT I · 我用對的那次</div><div class="r">04 / 11</div></div>
+    <div class="chrome-min"><div class="l">TOOL 01 · LANGGRAPH</div><div class="r">04 / 10</div></div>
     <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:3vh">
       <div data-anim style="display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-cat">第一次，成功了</div>
-        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">我寫了個小 Agent，幫我排三天行程</h2>
+        <div class="t-cat">第一件事</div>
+        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">我用 LangGraph 招了間小團隊，聘了四個員工</h2>
       </div>
-      <div data-anim class="lead" style="max-width:64ch;font-weight:400">我先跟它講我是誰、哪個部門、什麼專業、手上在忙什麼。剩下的交給一條自動跑的流程。這比較像我跟程式在<span class="underline-accent">分工</span>，不是把整件事都丟給 AI。</div>
+      <div data-anim class="lead" style="max-width:64ch;font-weight:400">想試著當老闆的，可以找 LangGraph。它讓我把流程畫成一張<span class="underline-accent">組織圖</span>：每個節點就是一個員工，各管一件事。我這個老闆只做兩件事——開工前交代背景（我是誰、什麼專業、想聽什麼），還有最後驗收。</div>
       <div data-anim class="pipeline" data-cols="4" style="margin-top:1vh">
-        <div class="step"><div class="step-nb">01</div><div class="step-title">抓下議程資料</div><div class="step-desc">網路爬蟲</div></div>
-        <div class="step accent-top"><div class="step-nb" style="color:var(--accent)">02</div><div class="step-title">開始分析</div><div class="step-desc">透過 AI 分析議程資訊，上網找相關 Topic，釐清技術範疇</div></div>
-        <div class="step accent-top"><div class="step-nb" style="color:var(--accent)">03</div><div class="step-title">排序 · 解衝堂</div><div class="step-desc">透過 AI 依我的喜好排出推薦組合，並準備臨時備案</div></div>
-        <div class="step"><div class="step-nb">04</div><div class="step-title">產出完整行程表</div><div class="step-desc">Markdown 轉 PDF</div></div>
+        <div class="step"><div class="step-nb">01</div><div class="step-title">工讀生</div><div class="step-desc">負責跑腿:把幾十場議程資料全部抓回來(網路爬蟲)</div></div>
+        <div class="step accent-top"><div class="step-nb" style="color:var(--accent)">02</div><div class="step-title">研究員</div><div class="step-desc">AI 出馬:分析議程資訊、上網查相關 Topic，釐清技術範疇</div></div>
+        <div class="step accent-top"><div class="step-nb" style="color:var(--accent)">03</div><div class="step-title">貼身特助</div><div class="step-desc">AI 出馬:依老闆喜好排出推薦組合，連衝堂備案都準備好</div></div>
+        <div class="step"><div class="step-nb">04</div><div class="step-title">行政</div><div class="step-desc">把成果印出來:Markdown 轉 PDF 行程表</div></div>
       </div>
-      <div data-anim class="callout" style="margin-top:1vh;max-width:70ch">需要判斷的地方才交給 AI，剩下那些重複的雜事，程式跑一跑就解決了。<span class="callout-src">後面你們就會看到，我下一個專案，就把這件事忘光了。</span></div>
+      <div data-anim class="callout" style="margin-top:1vh;max-width:70ch">這批員工不領薪水、不會累，也不發脾氣，可以改到你滿意為止。<span class="callout-src">用到的東西:LangGraph · 網路爬蟲 · Markdown → PDF</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============ 05 · 轉場 (S12 · Manifesto · ink) ============ -->
+<!-- ============ 05 · 專案二開場 (S12 · Manifesto · ink) ============ -->
 <section class="slide dark" data-layout="S12" data-animate="manifesto">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">THE TURN · 轉場</div><div class="r">05 / 11</div></div>
+    <div class="chrome-min"><div class="l">TOOL 02 · BRAINSTORMING SKILL</div><div class="r">05 / 10</div></div>
     <div style="flex:1;padding:0;display:flex;flex-direction:column;justify-content:center;gap:4vh">
       <div data-anim style="display:flex;flex-direction:column;gap:2vh">
-        <div class="t-cat on-dark">然後呢?</div>
-        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(7vw,13vh);line-height:.98;letter-spacing:-.03em;color:var(--paper)">初嚐甜頭後，<br>胃口也<span class="underline-accent">變大了</span></h2>
+        <div class="t-cat on-dark">第二件事，發想階段</div>
+        <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(6.4vw,12vh);line-height:1.02;letter-spacing:-.03em;color:var(--paper)">用 Brainstorming skill<br>幫新專案<span class="underline-accent">發想</span></h2>
       </div>
-      <div data-anim class="t-body" style="color:var(--paper);font-size:max(18px,1.25vw);max-width:60ch;opacity:.9">手上正在做的這個，是要<b style="font-weight:600">把 Figma 設計稿直接變成能跑的專案</b>。先前 AI 幫我解掉太多難題，我不知不覺就太信它了，加上那時網路上到處在吹 <span class="mark">AI Agent</span> 有多強，我一頭就栽了進去。</div>
+      <div data-anim class="t-body" style="color:var(--paper);font-size:max(18px,1.25vw);max-width:60ch;opacity:.9">目前的案子是「<b style="font-weight:600">把 Figma 設計稿變成能跑的專案</b>」。開工前，我從開源的 <span class="mark">superpowers</span> skill 集(obra/superpowers)裡挑了 <span class="mark">brainstorming</span> 陪我發想：丟一個模糊的題目進去，它會連環追問、大量生點子，很快就有一整頁的候選方案。</div>
     </div>
   </div>
 </section>
 
-<!-- ============ 06 · 踩坑 · 雙鑽石 (S17 · diagram) ============ -->
+<!-- ============ 06 · 拆解 (S08 · Duo Compare) ============ -->
+<section class="slide" data-layout="S08" data-animate="duo-mirror">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">TOOL 02 · BRAINSTORMING SKILL</div><div class="r">06 / 10</div></div>
+    <div style="flex:1;padding:0;display:flex;flex-direction:column">
+      <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-cat">用下來的感覺</div>
+        <h2 class="h-md" style="max-width:40ch">像幫公司聘了一個超會提案的企劃</h2>
+      </div>
+      <div class="duo-compare" data-anim style="margin-top:5vh">
+        <div class="col">
+          <div class="col-tag"><span class="num">他超強的地方</span></div>
+          <div class="col-ttl">提案<br>又快又多</div>
+          <div class="col-desc">丟一個模糊的題目給他，他會連環追問、從各種角度丟點子，還會在我的想法上加蓋。十幾分鐘，一整頁提案就擺在桌上。</div>
+        </div>
+        <span class="vrule"></span>
+        <div class="col">
+          <div class="col-tag"><span class="num">他從來不問的</span></div>
+          <div class="col-ttl">「老闆，<br>這題對嗎?」</div>
+          <div class="col-desc">他的工作，是把<span class="underline-accent">我給的題目</span>發散到極致。至於題目本身值不值得做、技術上蓋不蓋得起來——不在他的職務範圍。</div>
+          <ul class="col-list">
+            <li>提案可不可行，他不會主動幫我驗</li>
+            <li>而我挑了最順眼的一個提案，就著急著想開工</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · 專案二回顧 · 雙鑽石 (S17 · diagram) ============ -->
 <section class="slide" data-layout="S17" data-animate="grid-reveal">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">ACT II · 我繞的彎路</div><div class="r">06 / 11</div></div>
+    <div class="chrome-min"><div class="l">TOOL 02 · BRAINSTORMING SKILL</div><div class="r">07 / 10</div></div>
     <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:2.4vh">
       <div data-anim style="display:flex;flex-direction:column;gap:1.4vh">
-        <div class="t-cat">走錯路的開始</div>
+        <div class="t-cat">這一段我繞了彎路</div>
         <h2 class="h-xl-zh" style="font-size:min(4.6vw,8.4vh)">我跳過了第一個鑽石</h2>
       </div>
       <div class="grid-2-6-6" style="align-items:center;gap:3vw;flex:1;min-height:0">
         <div data-anim class="col" style="gap:2.4vh">
-          <div class="t-body" style="font-size:max(17px,1.12vw)">最近很流行用 <b style="font-weight:600">Brainstorm 這個 skill</b>，它很會幫你丟點子。但它就停在<span class="underline-accent">想點子這一層</span>，天生就這樣，不會再幫你往上想。</div>
-          <div class="t-body" style="font-size:max(17px,1.12vw)">後來我拿雙鑽石一比對，才看出自己漏了什麼。我跳過左邊的<b style="font-weight:600">「找對問題」</b>，一路衝到右邊<b style="font-weight:600">「找解法」</b>，還以為 brainstorm 完就算想清楚了。</div>
-          <div class="callout">把思考丟給 AI 的下場：以為它的提議都很有道理，卻沒想到它只是錨定在我最初的想法上打轉。美妙的誤會來得快，回頭的代價卻來得慢。</div>
+          <div class="t-body" style="font-size:max(17px,1.12vw)">後來我拿<b style="font-weight:600">雙鑽石</b>一比對，才看出自己漏了什麼：我跳過左邊的<b style="font-weight:600">「找對問題」</b>，一路衝到右邊<b style="font-weight:600">「找解法」</b>，還以為 brainstorm 完就算想清楚了。</div>
+          <div class="t-body" style="font-size:max(17px,1.12vw)">這不是 skill 的錯——它本來就只負責發散點子。是我把「它給的點子很多」，誤會成「我想得很完整」。</div>
+          <div class="callout">它每個提案聽起來都很有道理，其實全都繞著我最初那句話打轉。當下點頭點得有多開心，後來回頭的路就有多長。</div>
         </div>
         <div data-anim class="col" style="gap:2vh;align-items:center">
           <svg viewBox="0 0 640 240" style="width:100%;height:auto;overflow:visible" aria-hidden="true">
@@ -1369,140 +1414,77 @@
   </div>
 </section>
 
-<!-- ============ 07 · 頓悟 (S08 · Duo Compare) ============ -->
-<section class="slide" data-layout="S08" data-animate="duo-mirror">
-  <div class="canvas-card">
-    <div class="chrome-min"><div class="l">ACT II · 我繞的彎路</div><div class="r">07 / 11</div></div>
-    <div style="flex:1;padding:0;display:flex;flex-direction:column">
-      <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
-        <div class="t-cat">我錯在哪</div>
-        <h2 class="h-md" style="max-width:40ch">以為丟給聰明的 AI 就好，沒這麼單純。</h2>
-      </div>
-      <div class="duo-compare" data-anim style="margin-top:5vh">
-        <div class="col">
-          <div class="col-tag"><span class="num">看起來</span></div>
-          <div class="col-ttl">一個 AI<br>全部搞定</div>
-          <div class="col-desc">Claude Design、v0、Open Design，好像一句話丟進去，整包東西就長出來。</div>
-        </div>
-        <span class="vrule"></span>
-        <div class="col">
-          <div class="col-tag"><span class="num">實際上</span></div>
-          <div class="col-ttl">AI 加上一堆<br>照規矩跑的程式</div>
-          <div class="col-desc">背後要讀檔案、把元件一個個對起來，再檢查、輸出，全是寫死的流程。<b style="font-weight:600">Figma Code Connect</b>，就是這類規矩。</div>
-          <ul class="col-list">
-            <li>AI 當然還是有用，只是它跟程式<span class="underline-accent">一起做</span>事</li>
-            <li>能照規矩自動跑的，程式接手就好;剩下要判斷的，才輪到 AI</li>
-            <li>所以我開始會多問一句，先分清楚一件事到底要動腦，還是照做就好</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 08 · 三原則 (S13 · Three blocks) ============ -->
-<section class="slide" data-layout="S13" data-animate="stack-build">
-  <div class="canvas-card">
-    <div class="chrome-min"><div class="l">ACT III · 方法</div><div class="r">08 / 11</div></div>
-    <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:2.4vh">
-      <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
-        <div class="t-cat">三個原則</div>
-        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">我後來常用的三個原則</h2>
-      </div>
-      <div class="stack-row" data-anim style="margin-top:1vh">
-        <div class="stack-block b-accent">
-          <div class="layer-nb" style="color:var(--accent-on)">01</div>
-          <div class="layer-ttl" style="font-weight:600">該動腦 vs. 照做</div>
-          <div class="layer-desc">重複、機械的那種活，能交給程式或工具就交出去。留給自己跟 AI 的，是要判斷的部分。</div>
-        </div>
-        <div class="stack-block b-grey">
-          <div class="layer-nb">02</div>
-          <div class="layer-ttl">放大器，不是預言家</div>
-          <div class="layer-desc">讓它多丟點子，也叫它挑你的毛病、唱反調。別讓它一路順著你的意思講。最後拍板的是你。</div>
-        </div>
-        <div class="stack-block b-grey">
-          <div class="layer-nb">03</div>
-          <div class="layer-ttl">分事實與猜測</div>
-          <div class="layer-desc">把它講的東西分兩堆，<span class="geo-square" style="margin:0 .3em"></span>是確定的事實，<span style="display:inline-block;width:.62em;height:.62em;border:1.6px solid var(--ink);margin:0 .3em;vertical-align:middle"></span>是它的猜測。最沒把握的那塊，花半天做個小測試，實際跑一次看看。</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 09 · 對比 (S08 · Duo Compare) ============ -->
-<section class="slide" data-layout="S08" data-animate="duo-mirror">
-  <div class="canvas-card">
-    <div class="chrome-min"><div class="l">ACT III · 方法</div><div class="r">09 / 11</div></div>
-    <div style="flex:1;padding:0;display:flex;flex-direction:column">
-      <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
-        <div class="t-cat">以前 / 現在</div>
-        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">換了方法之後，我大概變成這樣</h2>
-      </div>
-      <div class="duo-compare" data-anim style="margin-top:2vh;flex:1;align-items:stretch;gap:5vw">
-        <div class="col" style="display:flex;flex-direction:column;justify-content:center;gap:3.2vh">
-          <div class="col-tag" style="font-size:max(14px,1.02vw)"><span class="num">以前的我</span> BEFORE</div>
-          <ul class="col-list" style="display:flex;flex-direction:column;gap:2.8vh;margin:0;border-top:0;padding-top:0">
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">有題目就開 chat，直接要答案</li>
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">一開口先講我早就想好的解法</li>
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">brainstorm 完就開工</li>
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">AI 講得很篤定，我就信了</li>
-          </ul>
-        </div>
-        <span class="vrule" style="align-self:stretch;height:auto"></span>
-        <div class="col accent" style="display:flex;flex-direction:column;justify-content:center;gap:3.2vh">
-          <div class="col-tag" style="font-size:max(14px,1.02vw)"><span class="num">現在的我</span> AFTER</div>
-          <ul class="col-list" style="display:flex;flex-direction:column;gap:2.8vh;margin:0;border-top:0;padding-top:0">
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">先把問題跟限制講清楚，不急著要答案</li>
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">要它先給我三個方向，自己也去查前人做過什麼、先啃最難的地方</li>
-            <li style="font-size:max(18px,1.35vw);line-height:1.45">把事實跟猜測分兩堆，最沒把握的先驗</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 10 · 實證 (S19 · Four Cards) ============ -->
+<!-- ============ 08 · 專案三 · 這份簡報 (S19 · Four Cards) ============ -->
 <section class="slide" data-layout="S19" data-animate="four-cards">
   <div class="canvas-card">
-    <div class="chrome-min"><div class="l">THE REVEAL · 最後一件事</div><div class="r">10 / 11</div></div>
+    <div class="chrome-min"><div class="l">TOOL 03 · GUIZANG-PPT-SKILL</div><div class="r">08 / 10</div></div>
     <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:3vh">
       <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
         <span style="width:80px;height:3px;background:var(--accent)"></span>
-        <div class="t-cat" style="margin-top:1vh">你猜到了嗎?</div>
-        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">這份簡報，也是這樣做的</h2>
+        <div class="t-cat" style="margin-top:1vh">第三件事，就在你眼前</div>
+        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">這份簡報，也是 AI 做的</h2>
       </div>
       <div data-anim style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.6vw;flex:1;align-content:start">
-        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 01</div><div class="t-h-prod">先想清楚故事</div><div class="t-body-sm">先過第一個鑽石，想清楚要講什麼，不急著動手。</div></div>
-        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 02</div><div class="t-h-prod">讓 AI 查證、互相挑錯</div><div class="t-body-sm">派 AI 上網查資料，再叫另一批回頭挑錯、唱反調。</div></div>
-        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 03</div><div class="t-h-prod">重複的做成模板</div><div class="t-body-sm">每頁格局都差不多，AI 只幫我挑版型、把內容擺進去。</div></div>
-        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 04</div><div class="t-h-prod">判斷的部分我自己來</div><div class="t-body-sm">文案、結構先讓 AI 弄，我再一頁一頁拍板。</div></div>
+        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 01</div><div class="t-h-prod">大綱與故事</div><div class="t-body-sm">我先想清楚要講什麼，AI 陪我把大綱磨出來。</div></div>
+        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 02</div><div class="t-h-prod">查證、互相挑錯</div><div class="t-body-sm">派 AI 上網查資料，再叫另一批回頭挑錯、唱反調。</div></div>
+        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 03</div><div class="t-h-prod">版型交給 skill</div><div class="t-body-sm">guizang-ppt-skill 內建 22 種版型跟設計規範，AI 只負責挑版型、把內容擺進去。</div></div>
+        <div style="display:flex;flex-direction:column;gap:1.2vh"><div class="t-meta">— 04</div><div class="t-h-prod">拍板我自己來</div><div class="t-body-sm">文案、結構先讓 AI 弄，我再一頁一頁改到滿意。</div></div>
       </div>
-      <div data-anim class="t-body-emp" style="font-size:max(18px,1.4vw);border-top:1px solid var(--grey-2);padding-top:2.4vh"></div>
+      <div data-anim class="t-body-emp" style="font-size:max(18px,1.4vw);border-top:1px solid var(--grey-2);padding-top:2.4vh">工具:Claude Code + guizang-ppt-skill——產出就是你現在看的這個網頁，鍵盤左右鍵就能翻。</div>
     </div>
   </div>
 </section>
 
-<!-- ============ 11 · 收束 (S10 · Split Closing · ink+paper) ============ -->
+<!-- ============ 09 · 觀察 (S13 · Three blocks) ============ -->
+<section class="slide" data-layout="S13" data-animate="stack-build">
+  <div class="canvas-card">
+    <div class="chrome-min"><div class="l">NOTES · 心得</div><div class="r">09 / 10</div></div>
+    <div style="flex:1;padding:0;display:flex;flex-direction:column;gap:2.4vh">
+      <div data-anim style="display:flex;flex-direction:column;gap:1.2vh">
+        <div class="t-cat">回顧這三件事</div>
+        <h2 class="h-xl-zh" style="font-size:min(4.4vw,8vh)">三個工具，各教了我一件事</h2>
+      </div>
+      <div class="stack-row" data-anim style="margin-top:1vh">
+        <div class="stack-block b-grey">
+          <div class="layer-nb">01 · LANGGRAPH</div>
+          <div class="layer-ttl">跑腿的交給程式，動腦的才聘 AI</div>
+          <div class="layer-desc">當老闆學到的第一課：員工不是越聰明越好。爬資料、轉 PDF 這種活，程式做得又快又穩；要判斷、要取捨的位子，才輪到 AI 坐。</div>
+        </div>
+        <div class="stack-block b-accent">
+          <div class="layer-nb" style="color:var(--accent-on)">02 · BRAINSTORMING</div>
+          <div class="layer-ttl" style="font-weight:600">提案是它的，題目是我的</div>
+          <div class="layer-desc">企劃再會提案，也不會替老闆想「這題對不對」。發散可以放心交給它，但問題找對了沒——第一顆鑽石——得我自己先走過。</div>
+        </div>
+        <div class="stack-block b-grey">
+          <div class="layer-nb">03 · PPT SKILL</div>
+          <div class="layer-ttl">規矩定好，AI 才好發揮</div>
+          <div class="layer-desc">這份簡報長得快，是因為 skill 把版型跟設計規範都先定死了。AI 在框架裡填內容，我只負責一頁一頁拍板。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · 收束 (S10 · Split Closing · ink+paper) ============ -->
 <section class="slide split" data-layout="S10" data-animate="split-statement">
   <div class="canvas-card">
     <div class="split-half">
       <div class="half b-ink" style="justify-content:space-between">
-        <div class="chrome-min"><div class="l">11 / 11</div><div class="r">TAKEAWAY · 收束</div></div>
-        <div data-anim style="display:flex;flex-direction:column;gap:2vh">
-          <div class="t-cat on-dark">如果只記得一句</div>
-          <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.4vw,8.4vh);line-height:1.08;letter-spacing:-.025em;color:var(--paper)">別等想清楚才用 AI——<br>先<span class="underline-accent">弄髒手</span>，但要用對方法，跟它一起想。</h2>
+        <div class="chrome-min"><div class="l">10 / 10</div><div class="r">WRAP UP · 收尾</div></div>
+        <div data-anim style="display:flex;flex-direction:column;gap:2.4vh">
+          <div class="t-cat on-dark">三件事講完了</div>
+          <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(6vw,11vh);line-height:1.04;letter-spacing:-.03em;color:var(--paper)">謝謝大家的<span class="underline-accent">聆聽</span></h2>
         </div>
         <div data-anim class="t-meta" style="color:rgba(255,255,255,.6)">AI × 我的工作 · 2026</div>
       </div>
       <div class="half" style="justify-content:space-between">
-        <div class="chrome-min"><div class="l">ONE MORE THING</div><div class="r">謝謝</div></div>
-        <div data-anim class="col" style="gap:3vh">
-          <div class="t-body" style="font-size:max(19px,1.35vw);line-height:1.6">以上就是整個過程，感謝大家的聆聽。</div>
+        <div class="chrome-min"><div class="l">THANK YOU</div><div class="r">Hunter</div></div>
+        <div data-anim class="col" style="gap:3vh;justify-content:center;flex:1">
+          <div class="t-body" style="font-size:max(19px,1.3vw);line-height:1.7">今天講的三件事，都是我真的做過、<br>坑也是我真的踩過的。</div>
+          <div class="t-body" style="font-size:max(19px,1.3vw);line-height:1.7">希望裡面有一兩個東西，<br>是你回到座位後，會想打開來玩玩看的。</div>
         </div>
         <div data-anim style="display:flex;justify-content:space-between;align-items:end;border-top:2px solid var(--accent);padding-top:2vh">
-          <div class="t-h-prod">謝謝 · Q &amp; A</div>
+          <div class="t-h-prod">Q &amp; A · 歡迎提問</div>
           <div class="t-meta">END</div>
         </div>
       </div>
